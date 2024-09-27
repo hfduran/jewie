@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34bdf128-bc01-404c-8d24-34bee71ea742" name="Changes" comment="added puml">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/Context.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/BunchCollection.java" afterDir="false" />
+    <list default="true" id="34bdf128-bc01-404c-8d24-34bee71ea742" name="Changes" comment="added stock">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/Financial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/Bunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/Bunch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/ConsignedSoldBunchCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/ConsignedSoldBunchCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/ModifiableBunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/ModifiableBunch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/pieces/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Consigned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Consigned.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,12 +103,21 @@
       <option name="project" value="LOCAL" />
       <updated>1727401666658</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added stock">
+      <option name="closed" value="true" />
+      <created>1727403894368</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727403894368</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="migrated to maven project" />
     <MESSAGE value="added puml" />
-    <option name="LAST_COMMIT_MESSAGE" value="added puml" />
+    <MESSAGE value="added stock" />
+    <option name="LAST_COMMIT_MESSAGE" value="added stock" />
   </component>
 </project>

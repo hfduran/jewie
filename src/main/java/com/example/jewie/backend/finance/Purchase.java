@@ -12,4 +12,8 @@ public class Purchase {
         this.bunches = bunches;
         this.value = value;
     }
+
+    public double getValue() {
+        return value;
+    }
 }

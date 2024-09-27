@@ -5,6 +5,7 @@ import com.example.jewie.backend.bunches.ConsignedSoldBunch;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class Consigned {
     private final List<ConsignedBunch> bunches;

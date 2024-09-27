@@ -16,4 +16,8 @@ public class Stock {
     public List<Piece> getCatalog() {
         return pieces.stream().filter(p -> p.getQty() > 0).toList();
     }
+
+    public List<Piece> getPieces(Piece piece) {
+        return pieces;
+    }
 }
