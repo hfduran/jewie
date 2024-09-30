@@ -2,7 +2,7 @@ package com.example.jewie.backend.bunches;
 
 import com.example.jewie.backend.pieces.Piece;
 
-public abstract class UsableBunch extends ModifiableBunch {
+public class UsableBunch extends ModifiableBunch {
     private final SuspendedBunch suspendedBunch = new SuspendedBunch();
 
     public UsableBunch(Piece piece, int qty) {
@@ -33,5 +33,10 @@ public abstract class UsableBunch extends ModifiableBunch {
     public void restoreAll() {
         int n = this.suspendedBunch.restoreAll();
         this.modifyQty(n);
+    }
+
+    public SoldBunch sell(int n) {
+        this.modifyQty(-n);
+        return new SoldBunch(this, n);
     }
 }

@@ -11,12 +11,6 @@ public class ConsignedBunch extends UsableBunch {
         this.consigned = consigned;
     }
 
-    public ConsignedSoldBunch sell(int n, double value) {
-        ConsignedSoldBunch consignedSoldBunch = new ConsignedSoldBunch(this, n, value);
-        this.consigned.registerSoldBunch(consignedSoldBunch);
-        return consignedSoldBunch;
-    }
-
     Consigned getConsigned() {
         return consigned;
     }

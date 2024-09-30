@@ -6,9 +6,4 @@ public class OwnedBunch extends UsableBunch {
     public OwnedBunch(Piece piece, int qty) {
         super(piece, qty);
     }
-
-    public SoldBunch sell(int n) {
-        this.modifyQty(-n);
-        return new SoldBunch(this, n);
-    }
 }

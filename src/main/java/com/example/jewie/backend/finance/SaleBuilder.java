@@ -1,14 +1,17 @@
 package com.example.jewie.backend.finance;
 
-import com.example.jewie.backend.bunches.*;
+import com.example.jewie.backend.bunches.ConsignedSoldBunchCollection;
+import com.example.jewie.backend.bunches.SoldBunch;
+import com.example.jewie.backend.bunches.UsableBunch;
 import com.example.jewie.backend.misc.Client;
 
 import java.util.Date;
 import java.util.List;
 
-public class SaleBuilder {
+public abstract class SaleBuilder {
+    private final ConsignedSoldBunchCollection consignedSoldBunchCollection =
+            new ConsignedSoldBunchCollection();
     private List<SoldBunch> soldBunches;
-    private final ConsignedSoldBunchCollection consignedSoldBunchCollection = new ConsignedSoldBunchCollection();
     private double value;
     private Date date;
     private Client client;
@@ -19,18 +22,30 @@ public class SaleBuilder {
         this.client = client;
     }
 
-    public void addBunch(OwnedBunch bunch, int n) {
+    public void addBunch(UsableBunch bunch, int n) {
         SoldBunch soldBunch = bunch.sell(n);
         this.soldBunches.add(soldBunch);
     }
 
-    public void addBunch(ConsignedBunch bunch, int n, double value) {
-        ConsignedSoldBunch soldBunch = bunch.sell(n, value);
-        this.soldBunches.add(soldBunch);
-        this.consignedSoldBunchCollection.add(soldBunch);
+    protected List<SoldBunch> getSoldBunches() {
+        return soldBunches;
     }
 
-    public Sale getResult() {
-        return new Sale(date, value, client, soldBunches, consignedSoldBunchCollection);
+    protected ConsignedSoldBunchCollection getConsignedSoldBunchCollection() {
+        return consignedSoldBunchCollection;
     }
+
+    protected double getValue() {
+        return value;
+    }
+
+    protected Date getDate() {
+        return date;
+    }
+
+    protected Client getClient() {
+        return client;
+    }
+
+    public abstract Sale getResult();
 }
