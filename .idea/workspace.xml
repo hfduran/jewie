@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34bdf128-bc01-404c-8d24-34bee71ea742" name="Changes" comment="calculate all time profit">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/ConsignedSale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/ConsignedSaleBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/OwnedSale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Origin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/OwnedSaleBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/ConsignedBunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/ConsignedBunch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/ConsignedSoldBunch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/OwnedBunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/OwnedBunch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/ConsignedBunch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/OwnedBunch.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/UsableBunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/UsableBunch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Consigned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Consigned.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/ConsignedSaleBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/ConsignedSaleBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Purchase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/SaleBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/SaleBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -52,17 +51,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/hfduran/IdeaProjects/jewjew/src/main/java/com/example/jewjew/backend",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hfduran/IdeaProjects/jewjew/src/main/java/com/example/jewjew/backend&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.jewie" />
@@ -99,38 +98,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727399190376</updated>
-    </task>
-    <task id="LOCAL-00001" summary="migrated to maven project">
-      <option name="closed" value="true" />
-      <created>1727399840986</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1727399840986</updated>
-    </task>
-    <task id="LOCAL-00002" summary="added puml">
-      <option name="closed" value="true" />
-      <created>1727401666658</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1727401666658</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added stock">
-      <option name="closed" value="true" />
-      <created>1727403894368</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1727403894368</updated>
-    </task>
-    <task id="LOCAL-00004" summary="calculate all time profit">
-      <option name="closed" value="true" />
-      <created>1727448417667</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1727448417668</updated>
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />

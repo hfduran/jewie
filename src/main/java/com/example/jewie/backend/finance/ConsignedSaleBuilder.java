@@ -9,6 +9,9 @@ public class ConsignedSaleBuilder extends SaleBuilder {
 
     @Override
     public Sale getResult() {
-        return new ConsignedSale(this.getDate(), this.getValue(), this.getClient(), this.getSoldBunches(), this.consigned);
+        ConsignedSale sale = new ConsignedSale(this.getDate(), this.getValue(), this.getClient(),
+                this.getSoldBunches(), this.consigned);
+        this.consigned.addSale(sale);
+        return sale;
     }
 }

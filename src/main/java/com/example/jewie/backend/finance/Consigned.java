@@ -1,15 +1,15 @@
 package com.example.jewie.backend.finance;
 
-import com.example.jewie.backend.bunches.ConsignedBunch;
+import com.example.jewie.backend.bunches.UsableBunch;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Consigned {
-    private final List<ConsignedBunch> bunches;
+public class Consigned implements Origin {
+    private final List<UsableBunch> bunches;
     private final List<ConsignedSale> sales = new ArrayList<>();
 
-    public Consigned(List<ConsignedBunch> bunches) {
+    public Consigned(List<UsableBunch> bunches) {
         this.bunches = bunches;
     }
 
@@ -20,5 +20,16 @@ public class Consigned {
         } else {
             return 0.2 * value;
         }
+    }
+
+    @Override
+    public SaleBuilder getSaleBuilder() {
+        ConsignedSaleBuilder saleBuilder = new ConsignedSaleBuilder();
+        saleBuilder.setConsigned(this);
+        return saleBuilder;
+    }
+
+    void addSale(ConsignedSale sale) {
+        this.sales.add(sale);
     }
 }
