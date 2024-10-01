@@ -1,8 +1,11 @@
 package com.example.jewie.backend.bunches;
 
+import com.example.jewie.backend.pieces.Piece;
+
 class SuspendedBunch extends ModifiableBunch {
-    public SuspendedBunch() {
-        this.qty = 0;
+
+    public SuspendedBunch(Piece piece) {
+        super(piece);
     }
 
     public void suspend(int n) {

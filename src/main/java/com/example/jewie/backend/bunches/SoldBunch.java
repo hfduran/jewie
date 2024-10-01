@@ -7,9 +7,7 @@ public class SoldBunch extends Bunch {
     protected Bunch originalBunch;
 
     public SoldBunch(Bunch originalBunch, int qty) {
-        Piece piece = originalBunch.piece;
+        super(originalBunch.piece, qty);
         this.originalBunch = originalBunch;
-        this.qty = qty;
-        this.piece = piece;
     }
 }

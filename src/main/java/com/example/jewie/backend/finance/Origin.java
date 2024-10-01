@@ -1,5 +1,16 @@
 package com.example.jewie.backend.finance;
 
-public interface Origin {
-    public SaleBuilder getSaleBuilder();
+import com.example.jewie.backend.bunches.ReceivedBunch;
+import com.example.jewie.backend.bunches.UsableBunch;
+
+import java.util.List;
+
+public abstract class Origin {
+    protected final List<ReceivedBunch> receivedBunches;
+    protected final List<UsableBunch> bunches;
+
+    public Origin(List<ReceivedBunch> receivedBunches, List<UsableBunch> bunches) {
+        this.receivedBunches = receivedBunches;
+        this.bunches = bunches;
+    }
 }

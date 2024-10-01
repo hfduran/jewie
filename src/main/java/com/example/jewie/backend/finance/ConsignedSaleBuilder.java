@@ -1,10 +1,18 @@
 package com.example.jewie.backend.finance;
 
+import com.example.jewie.backend.bunches.ConsignedBunch;
+import com.example.jewie.backend.bunches.UsableBunch;
+
 public class ConsignedSaleBuilder extends SaleBuilder {
     private Consigned consigned;
 
     public void setConsigned(Consigned consigned) {
         this.consigned = consigned;
+    }
+
+    @Override
+    public boolean supportBunch(UsableBunch bunch) {
+        return bunch instanceof ConsignedBunch;
     }
 
     @Override

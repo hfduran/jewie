@@ -1,17 +1,20 @@
 package com.example.jewie.backend.bunches;
 
-import com.example.jewie.backend.finance.Origin;
+import com.example.jewie.backend.finance.OwnedSaleBuilder;
 import com.example.jewie.backend.finance.SaleBuilder;
 import com.example.jewie.backend.pieces.Piece;
 
-public class UsableBunch extends ModifiableBunch {
-    private final SuspendedBunch suspendedBunch = new SuspendedBunch();
-    private final Origin origin;
+public abstract class UsableBunch extends ModifiableBunch {
+    private final SuspendedBunch suspendedBunch;
 
-    public UsableBunch(Piece piece, int qty, Origin origin) {
-        this.piece = piece;
-        this.qty = qty;
-        this.origin = origin;
+    public UsableBunch(Piece piece) {
+        super(piece);
+        this.suspendedBunch = new SuspendedBunch(this.piece);
+    }
+
+    public UsableBunch(Piece piece, int qty) {
+        super(piece, qty);
+        this.suspendedBunch = new SuspendedBunch(this.piece);
     }
 
     public int getSuspendedQty() {
@@ -39,9 +42,7 @@ public class UsableBunch extends ModifiableBunch {
         this.modifyQty(n);
     }
 
-    public SaleBuilder getSaleBuilder() {
-        return this.origin.getSaleBuilder();
-    }
+    public abstract SaleBuilder getSaleBuilder();
 
     public SoldBunch sell(int n) {
         this.modifyQty(-n);
