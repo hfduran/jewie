@@ -1,7 +1,59 @@
 @startuml
-Object <|-- ArrayList
 
-Object : equals()
-ArrayList : Object[] elementData
-ArrayList : size()
+title Jewie Class Diagram
+
+class Piece {
+    name
+    catalogPrice
+}
+
+abstract class Bunch {
+    qty
+}
+class SoldBunch extends Bunch
+abstract class ModifiableBunch extends Bunch {
+    modifyQty(delta)
+}
+abstract class UsableBunch extends ModifiableBunch {
+    abstract sell(n)
+    abstract getSaleBuilder()
+}
+class SuspendedBunch extends Bunch
+SuspendedBunch "1"--"1" UsableBunch
+
+class OwnedBunch extends UsableBunch
+class ConsignedBunch extends UsableBunch
+
+abstract class Sale {
+    value
+    abstract getRevenue()
+}
+class OwnedSale extends Sale
+class ConsignedSale extends Sale
+
+abstract class SaleBuilder
+
+abstract class Origin
+class ReceivedBunch
+class Consigned extends Origin {
+    applyCommission(value)
+}
+class Purchase extends Origin {
+    getPrice()
+}
+
+Piece "1"--"*" Bunch
+
+OwnedSaleBuilder ..> OwnedSale
+ConsignedSaleBuilder ..> ConsignedSale
+OwnedBunch ..> OwnedSaleBuilder
+ConsignedBunch ..> ConsignedSaleBuilder
+
+Consigned "1"--"*" ConsignedBunch
+Purchase "*"--"*" OwnedBunch
+
+Origin "1"--"*" ReceivedBunch
+
+Sale "1"--"*" SoldBunch
+
 @enduml
