@@ -9,17 +9,14 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class PiecesView {
-    private Scene loadFXML(String path) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(path));
-        return new Scene(fxmlLoader.load(), 300, 200);
-    }
-
+public class HomeController {
     @FXML
-    protected void onBackButtonClick(ActionEvent event) throws IOException {
-        Scene scene = this.loadFXML("home-view.fxml");
+    protected void onPiecesButtonClick(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("pieces-view.fxml"));
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        Scene scene = new Scene(fxmlLoader.load(), 300, 200);
 
         stage.setScene(scene);
         stage.show();
