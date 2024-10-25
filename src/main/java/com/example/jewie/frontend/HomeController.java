@@ -1,5 +1,6 @@
 package com.example.jewie.frontend;
 
+import com.example.jewie.frontend.core.FXMLLoaderWrapper;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,12 +12,12 @@ import java.io.IOException;
 
 public class HomeController {
     @FXML
-    protected void onPiecesButtonClick(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("pieces-view.fxml"));
+    protected void onPiecesButtonClick(ActionEvent event) {
+        FXMLLoaderWrapper fxmlLoader = new FXMLLoaderWrapper();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        Scene scene = new Scene(fxmlLoader.load(), 300, 200);
+        Scene scene = fxmlLoader.loadFXMLToScene(getClass().getResource("pieces-view.fxml"));
 
         stage.setScene(scene);
         stage.show();

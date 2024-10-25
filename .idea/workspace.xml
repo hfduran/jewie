@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34bdf128-bc01-404c-8d24-34bee71ea742" name="Changes" comment="started frontend">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/PiecesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/core/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/exceptions/FxmlLoadException.java" afterDir="false" />
+    <list default="true" id="34bdf128-bc01-404c-8d24-34bee71ea742" name="Changes" comment=":goal_net: added controller error handling">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/core/FXMLLoaderWrapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/DefaultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/DefaultController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/ErrorPopupController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/HomeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/DefaultController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/PiecesView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/error-popup.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/home-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/pieces-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/pieces-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/PiecesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/PiecesController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729815519516</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=":goal_net: added controller error handling">
+      <option name="closed" value="true" />
+      <created>1729825141596</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729825141596</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +197,7 @@
     <MESSAGE value="classes diagram" />
     <MESSAGE value=":memo: docs: fixed SaleBuilder inheritance on diagram" />
     <MESSAGE value="started frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="started frontend" />
+    <MESSAGE value=":goal_net: added controller error handling" />
+    <option name="LAST_COMMIT_MESSAGE" value=":goal_net: added controller error handling" />
   </component>
 </project>
