@@ -1,23 +1,28 @@
 package com.example.jewie.backend;
 
-import com.example.jewie.backend.bunches.UsableBunch;
+import com.example.jewie.backend.exceptions.PieceCodeAlreadyExistsException;
 import com.example.jewie.backend.pieces.Piece;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Stock {
-    private final List<Piece> pieces = new ArrayList<>();
+    private final Map<String, Piece> pieces = new HashMap<>();
 
     public void addPiece(Piece piece) {
-        this.pieces.add(piece);
+        String code = piece.getCode();
+        if (this.pieces.containsKey(code)) {
+            throw new PieceCodeAlreadyExistsException(code);
+        }
+        this.pieces.put(code, piece);
     }
 
     public List<Piece> getCatalog() {
-        return pieces.stream().filter(p -> p.getQty() > 0).toList();
+        return pieces.values().stream().filter(p -> p.getQty() > 0).toList();
     }
 
     public List<Piece> getPieces(Piece piece) {
-        return pieces;
+        return pieces.values().stream().toList();
     }
 }
