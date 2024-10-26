@@ -13,4 +13,8 @@ module com.example.jewie {
     opens com.example.jewie.frontend.exceptions to javafx.fxml;
     exports com.example.jewie.frontend.core;
     opens com.example.jewie.frontend.core to javafx.fxml;
+    exports com.example.jewie.frontend.views;
+    opens com.example.jewie.frontend.views to javafx.fxml;
+    exports com.example.jewie.frontend.views.pieces;
+    opens com.example.jewie.frontend.views.pieces to javafx.fxml;
 }

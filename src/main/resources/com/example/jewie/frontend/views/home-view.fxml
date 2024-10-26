@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<fx:root type="com.example.jewie.frontend.views.HomeViewController" xmlns:fx="http://javafx.com/fxml">
+    <Button text="Go to Catalog" onAction="#onPiecesButtonClick"/>
+    <Button text="Go to Purchases"/>
+</fx:root>

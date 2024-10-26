@@ -8,6 +8,7 @@ import java.lang.reflect.InvocationTargetException;
 
 public class GlobalExceptionHandler {
     public void handle(Throwable unhandled) {
+        unhandled.printStackTrace();
         if(unhandled instanceof RuntimeException) {
             Throwable cause = unhandled.getCause();
             if(cause instanceof InvocationTargetException) {
