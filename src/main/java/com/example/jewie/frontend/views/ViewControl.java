@@ -2,6 +2,7 @@ package com.example.jewie.frontend.views;
 
 import com.example.jewie.frontend.exceptions.FxmlLoadException;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 import java.io.IOException;
@@ -22,7 +23,8 @@ public abstract class ViewControl {
         });
 
         try {
-            return new Scene(fxmlLoader.load(), 800, 600);
+            Parent loadedFXML = fxmlLoader.load();
+            return new Scene(loadedFXML, 800, 600);
         } catch (IOException e) {
             throw new FxmlLoadException(getViewPath());
         }

@@ -6,11 +6,13 @@ import com.example.jewie.backend.pieces.PieceType;
 import com.example.jewie.frontend.utils.formatters.DoubleTextFormatter;
 import com.example.jewie.frontend.views.HomeViewController;
 import com.example.jewie.frontend.views.ViewControl;
+import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -21,9 +23,14 @@ import java.util.ResourceBundle;
 
 public class PiecesViewController extends ViewControl implements Initializable {
 
-    public TextField catalogPriceTextInput;
-    public TextField nameTextInput;
-    public TextField codeTextInput;
+    @FXML
+    protected TextField catalogPriceTextInput;
+    @FXML
+    protected TextField nameTextInput;
+    @FXML
+    protected TextField codeTextInput;
+    @FXML
+    protected Button submitButton;
 
     @FXML
     private ComboBox<PieceType> typeComboBox;
@@ -44,6 +51,11 @@ public class PiecesViewController extends ViewControl implements Initializable {
         stage.show();
     }
 
+    private boolean inputsReady() {
+        return !(codeTextInput.getText().isBlank() || nameTextInput.getText().isBlank() ||
+                catalogPriceTextInput.getText().isBlank() || typeComboBox.getValue() == null);
+    }
+
     private void clearInputs() {
         nameTextInput.setText("");
         codeTextInput.setText("");
@@ -53,8 +65,10 @@ public class PiecesViewController extends ViewControl implements Initializable {
 
     @FXML
     protected void onSubmit() {
-        Piece newPiece = new Piece(codeTextInput.getText(), nameTextInput.getText(),
-                Double.parseDouble(catalogPriceTextInput.getText()), typeComboBox.getValue());
+        Piece newPiece = new Piece(codeTextInput.getText(),
+                nameTextInput.getText(),
+                Double.parseDouble(catalogPriceTextInput.getText()),
+                typeComboBox.getValue());
         Stock.getInstance().addPiece(newPiece);
         clearInputs();
     }
@@ -63,5 +77,12 @@ public class PiecesViewController extends ViewControl implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         catalogPriceTextInput.setTextFormatter(DoubleTextFormatter.getFormatter());
         typeComboBox.getItems().addAll(PieceType.values());
+        submitButton.disableProperty()
+                .bind(Bindings.createBooleanBinding(() -> !inputsReady(),
+                        catalogPriceTextInput.textProperty(),
+                        nameTextInput.textProperty(),
+                        codeTextInput.textProperty(),
+                        typeComboBox.valueProperty()));
     }
+
 }

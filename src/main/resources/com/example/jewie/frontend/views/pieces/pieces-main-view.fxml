@@ -13,6 +13,6 @@
     <TextField fx:id="catalogPriceTextInput" promptText="Catalog Price"/>
     <Text text="Piece Type"/>
     <ComboBox fx:id="typeComboBox" promptText="Select an option"/>
-    <Button text="Create Piece" onAction="#onSubmit" disable="true"/>
+    <Button fx:id="submitButton" text="Create Piece" onAction="#onSubmit"/>
     <Button text="Back Home" onAction="#onBackButtonClick"/>
 </VBox>

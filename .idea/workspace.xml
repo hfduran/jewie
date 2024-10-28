@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34bdf128-bc01-404c-8d24-34bee71ea742" name="Changes" comment=":sparkles: add: piece register inputs">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/pieces/pieces-main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/HomeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/HomeViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/ViewControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/ViewControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/pieces/PiecesViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/pieces/PiecesViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/home-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/pieces/pieces-main-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/pieces/pieces-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/pieces/pieces-main-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +52,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HelloApplication.executor": "Run",
-    "Application.MainApp.executor": "Debug",
+    "Application.MainApp.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "401",
@@ -67,7 +63,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
@@ -239,7 +235,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/ViewControl.java</url>
-          <line>25</line>
+          <line>27</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -249,7 +245,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/ViewControl.java</url>
-          <line>16</line>
+          <line>17</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
