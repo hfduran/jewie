@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<fx:root type="com.example.jewie.frontend.views.HomeViewController" xmlns:fx="http://javafx.com/fxml">
-    <Button text="Go to Catalog" onAction="#onPiecesButtonClick"/>
-    <Button text="Go to Purchases"/>
-</fx:root>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.jewie.frontend.views.HomeViewController"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox>
+        <Button text="Go to Catalog" onAction="#onPiecesButtonClick"/>
+        <Button text="Go to Purchases"/>
+    </VBox>
+</AnchorPane>

@@ -8,6 +8,12 @@ import java.util.List;
 import java.util.Map;
 
 public class Stock {
+    private static Stock singletonInstance;
+    public static Stock getInstance() {
+        if (singletonInstance == null) singletonInstance = new Stock();
+        return singletonInstance;
+    }
+
     private final Map<String, Piece> pieces = new HashMap<>();
 
     public void addPiece(Piece piece) {

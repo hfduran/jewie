@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.example.jewie.frontend.views.pieces.PiecesViewController?>
-<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.Label?>
-<?import com.sun.javafx.scene.control.DoubleField?>
-<?import javafx.scene.control.ComboBox?>
-<fx:root type="com.example.jewie.frontend.views.pieces.PiecesViewController" xmlns:fx="http://javafx.com/fxml">
-    <VBox spacing="20.0" alignment="CENTER">
-        <Text text="Code:"/>
-        <TextField fx:id="codeTextInput" promptText="Code"/>
-        <Text text="Name:"/>
-        <TextField fx:id="nameTextInput" promptText="Name"/>
-        <Text text="Catalog Price:" />
-        <TextField fx:id="catalogPriceTextInput" promptText="Catalog Price"/>
-        <Text text="Piece Type"/>
-        <ComboBox fx:id="typeComboBox" promptText="Select an option"/>
-        <Button text="Back Home" onAction="#onBackButtonClick"/>
-    </VBox>
-</fx:root>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.jewie.frontend.views.pieces.PiecesViewController"
+      spacing="20.0" alignment="CENTER">
+    <Text text="Code:"/>
+    <TextField fx:id="codeTextInput" promptText="Code"/>
+    <Text text="Name:"/>
+    <TextField fx:id="nameTextInput" promptText="Name"/>
+    <Text text="Catalog Price:"/>
+    <TextField fx:id="catalogPriceTextInput" promptText="Catalog Price"/>
+    <Text text="Piece Type"/>
+    <ComboBox fx:id="typeComboBox" promptText="Select an option"/>
+    <Button text="Create Piece" onAction="#onSubmit" disable="true"/>
+    <Button text="Back Home" onAction="#onBackButtonClick"/>
+</VBox>

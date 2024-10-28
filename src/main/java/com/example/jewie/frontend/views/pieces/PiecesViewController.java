@@ -1,5 +1,7 @@
 package com.example.jewie.frontend.views.pieces;
 
+import com.example.jewie.backend.Stock;
+import com.example.jewie.backend.pieces.Piece;
 import com.example.jewie.backend.pieces.PieceType;
 import com.example.jewie.frontend.utils.formatters.DoubleTextFormatter;
 import com.example.jewie.frontend.views.HomeViewController;
@@ -26,11 +28,6 @@ public class PiecesViewController extends ViewControl implements Initializable {
     @FXML
     private ComboBox<PieceType> typeComboBox;
 
-    public PiecesViewController() {
-        super();
-        catalogPriceTextInput.setTextFormatter(DoubleTextFormatter.getFormatter());
-    }
-
     @Override
     protected String getViewPath() {
         return "pieces-main-view.fxml";
@@ -39,7 +36,7 @@ public class PiecesViewController extends ViewControl implements Initializable {
     @FXML
     protected void onBackButtonClick(ActionEvent event) {
         HomeViewController homeControl = new HomeViewController();
-        Scene scene = homeControl.createScene();
+        Scene scene = homeControl.getScene();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
@@ -47,8 +44,24 @@ public class PiecesViewController extends ViewControl implements Initializable {
         stage.show();
     }
 
+    private void clearInputs() {
+        nameTextInput.setText("");
+        codeTextInput.setText("");
+        catalogPriceTextInput.setText("");
+        typeComboBox.setValue(null);
+    }
+
+    @FXML
+    protected void onSubmit() {
+        Piece newPiece = new Piece(codeTextInput.getText(), nameTextInput.getText(),
+                Double.parseDouble(catalogPriceTextInput.getText()), typeComboBox.getValue());
+        Stock.getInstance().addPiece(newPiece);
+        clearInputs();
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        catalogPriceTextInput.setTextFormatter(DoubleTextFormatter.getFormatter());
         typeComboBox.getItems().addAll(PieceType.values());
     }
 }

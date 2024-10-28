@@ -11,7 +11,7 @@ public class HomeViewController extends ViewControl {
     @FXML
     protected void onPiecesButtonClick(ActionEvent event) {
         PiecesViewController piecesControl = new PiecesViewController();
-        Scene scene = piecesControl.createScene();
+        Scene scene = piecesControl.getScene();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
