@@ -28,7 +28,7 @@ public class Stock {
         return pieces.values().stream().filter(p -> p.getQty() > 0).toList();
     }
 
-    public List<Piece> getPieces(Piece piece) {
+    public List<Piece> getPieces() {
         return pieces.values().stream().toList();
     }
 }

@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34bdf128-bc01-404c-8d24-34bee71ea742" name="Changes" comment=":sparkles: add: piece register inputs">
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+    <list default="true" id="34bdf128-bc01-404c-8d24-34bee71ea742" name="Changes" comment=":sparkles: added piece creation on stock">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/catalog/CatalogCardViewControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/catalog/CatalogViewControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/catalog/catalog-card-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/catalog/catalog-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/pieces/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/HomeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/HomeViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/ViewControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/ViewControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/pieces/PiecesViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/pieces/PiecesViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/pieces/pieces-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/pieces/pieces-main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/home-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,14 +29,17 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="Exception" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/catalog/CatalogViewControl.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -58,12 +68,12 @@
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "401",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/home/hfduran/IdeaProjects/jewie/src/main/java/com/example/jewie/frontend",
+    "last_directory_selection": "/home/hfduran/IdeaProjects/jewie/src/main/java/com/example/jewie/frontend/views/catalog",
     "last_opened_file_path": "/home/hfduran/IdeaProjects/jewie/src/main/resources/com/example/jewie/frontend",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+    "settings.editor.selected.configurable": "com.maddyhome.idea.vim.ui.VimEmulationConfigurable"
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
@@ -77,13 +87,14 @@
       <recent name="$PROJECT_DIR$/src/main/resources/com.example.jewie.frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/catalog" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/pieces" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/pieces" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.jewie.frontend.views.catalog" />
       <recent name="com.example.jewie" />
     </key>
   </component>
@@ -194,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729982187990</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary=":sparkles: added piece creation on stock">
+      <option name="closed" value="true" />
+      <created>1730148484614</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730148484614</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,25 +247,16 @@
     <MESSAGE value=":goal_net: added controller error handling" />
     <MESSAGE value="️ added own fxmloader" />
     <MESSAGE value=":sparkles: add: piece register inputs" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: add: piece register inputs" />
+    <MESSAGE value=":sparkles: added piece creation on stock" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: added piece creation on stock" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/ViewControl.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/HomeViewController.java</url>
-          <line>12</line>
+          <line>13</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/ViewControl.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

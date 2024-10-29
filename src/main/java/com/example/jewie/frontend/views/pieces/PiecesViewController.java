@@ -22,7 +22,6 @@ import java.util.ResourceBundle;
 
 
 public class PiecesViewController extends ViewControl implements Initializable {
-
     @FXML
     protected TextField catalogPriceTextInput;
     @FXML
@@ -31,24 +30,24 @@ public class PiecesViewController extends ViewControl implements Initializable {
     protected TextField codeTextInput;
     @FXML
     protected Button submitButton;
-
     @FXML
     private ComboBox<PieceType> typeComboBox;
 
     @Override
-    protected String getViewPath() {
-        return "pieces-main-view.fxml";
+    public void initialize(URL location, ResourceBundle resources) {
+        catalogPriceTextInput.setTextFormatter(DoubleTextFormatter.getFormatter());
+        typeComboBox.getItems().addAll(PieceType.values());
+        submitButton.disableProperty()
+                .bind(Bindings.createBooleanBinding(() -> !inputsReady(),
+                        catalogPriceTextInput.textProperty(),
+                        nameTextInput.textProperty(),
+                        codeTextInput.textProperty(),
+                        typeComboBox.valueProperty()));
     }
 
-    @FXML
-    protected void onBackButtonClick(ActionEvent event) {
-        HomeViewController homeControl = new HomeViewController();
-        Scene scene = homeControl.getScene();
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        stage.setScene(scene);
-        stage.show();
+    @Override
+    protected String getViewPath() {
+        return "pieces-main-view.fxml";
     }
 
     private boolean inputsReady() {
@@ -73,16 +72,15 @@ public class PiecesViewController extends ViewControl implements Initializable {
         clearInputs();
     }
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        catalogPriceTextInput.setTextFormatter(DoubleTextFormatter.getFormatter());
-        typeComboBox.getItems().addAll(PieceType.values());
-        submitButton.disableProperty()
-                .bind(Bindings.createBooleanBinding(() -> !inputsReady(),
-                        catalogPriceTextInput.textProperty(),
-                        nameTextInput.textProperty(),
-                        codeTextInput.textProperty(),
-                        typeComboBox.valueProperty()));
-    }
 
+    @FXML
+    protected void onBackButtonClick(ActionEvent event) {
+        HomeViewController homeControl = new HomeViewController();
+        Scene scene = homeControl.getScene();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        stage.setScene(scene);
+        stage.show();
+    }
 }
