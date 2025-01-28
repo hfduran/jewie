@@ -4,18 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34bdf128-bc01-404c-8d24-34bee71ea742" name="Changes" comment=":sparkles: added piece creation on stock">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/catalog/CatalogCardViewControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/catalog/CatalogViewControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/catalog/catalog-card-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/catalog/catalog-view.fxml" afterDir="false" />
+    <list default="true" id="34bdf128-bc01-404c-8d24-34bee71ea742" name="Changes" comment=":sparkles: add: catalog view">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/purchases/AddPurchaseViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/purchases/add-purchase-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/classes.puml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/Financial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/Financial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/Bunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/Bunch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/ReceivedBunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/bunches/ReceivedBunch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Consigned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Consigned.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Origin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Origin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/Purchase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/SaleBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/finance/SaleBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/backend/pieces/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/MainApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/HomeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/HomeViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/ViewControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/ViewControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/ViewControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/catalog/CatalogCardViewControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/catalog/CatalogCardViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/catalog/CatalogViewControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/catalog/CatalogViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/pieces/PiecesViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/pieces/PiecesViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/catalog/catalog-card-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/catalog/catalog-card-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/catalog/catalog-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/catalog/catalog-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jewie/frontend/views/home-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,16 +74,17 @@
     "Application.HelloApplication.executor": "Run",
     "Application.MainApp.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "401",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/home/hfduran/IdeaProjects/jewie/src/main/java/com/example/jewie/frontend/views/catalog",
+    "last_directory_selection": "/home/hfduran/IdeaProjects/jewie/src/main/java/com/example/jewie/frontend/views/purchases",
     "last_opened_file_path": "/home/hfduran/IdeaProjects/jewie/src/main/resources/com/example/jewie/frontend",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "com.maddyhome.idea.vim.ui.VimEmulationConfigurable"
+    "settings.editor.selected.configurable": "preferences.JavaFX"
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
@@ -213,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730148484614</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=":sparkles: add: catalog view">
+      <option name="closed" value="true" />
+      <created>1730163143810</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1730163143810</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,17 +267,7 @@
     <MESSAGE value="️ added own fxmloader" />
     <MESSAGE value=":sparkles: add: piece register inputs" />
     <MESSAGE value=":sparkles: added piece creation on stock" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: added piece creation on stock" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/jewie/frontend/views/HomeViewController.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value=":sparkles: add: catalog view" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: add: catalog view" />
   </component>
 </project>

@@ -1,19 +1,17 @@
 package com.example.jewie.frontend.views;
 
-import com.example.jewie.frontend.exceptions.FxmlLoadException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
-import javax.management.relation.RelationServiceNotRegisteredException;
 import java.io.IOException;
 import java.net.URL;
 
-public abstract class ViewControl {
+public abstract class ViewController {
     private final FXMLLoader fxmlLoader;
     private Parent parent;
 
-    public ViewControl() {
+    public ViewController() {
         fxmlLoader = new FXMLLoader(getViewURL());
         configureFxmlLoader();
         createParent();
@@ -48,6 +46,6 @@ public abstract class ViewControl {
     }
 
     public Scene getScene() {
-        return new Scene(getParent(), 800, 600);
+        return new Scene(getParent(), 600, 400);
     }
 }

@@ -35,6 +35,7 @@ abstract class SaleBuilder
 
 abstract class Origin
 class ReceivedBunch
+Bunch <|-- ReceivedBunch
 class Consigned extends Origin {
     applyCommission(value)
 }

@@ -21,4 +21,5 @@ module com.example.jewie {
     exports com.example.jewie.frontend.views.catalog;
     opens com.example.jewie.frontend.views.catalog to javafx.fxml;
     exports com.example.jewie.backend.pieces;
+    opens com.example.jewie.frontend.views.purchases to javafx.fxml;
 }

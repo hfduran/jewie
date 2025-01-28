@@ -5,7 +5,7 @@ import com.example.jewie.backend.pieces.Piece;
 import com.example.jewie.backend.pieces.PieceType;
 import com.example.jewie.frontend.utils.formatters.DoubleTextFormatter;
 import com.example.jewie.frontend.views.HomeViewController;
-import com.example.jewie.frontend.views.ViewControl;
+import com.example.jewie.frontend.views.ViewController;
 import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -21,7 +21,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class PiecesViewController extends ViewControl implements Initializable {
+public class PiecesViewController extends ViewController implements Initializable {
     @FXML
     protected TextField catalogPriceTextInput;
     @FXML

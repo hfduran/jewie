@@ -1,5 +1,6 @@
 package com.example.jewie.backend.finance;
 
+import com.example.jewie.backend.bunches.ConsignedBunch;
 import com.example.jewie.backend.bunches.ReceivedBunch;
 import com.example.jewie.backend.bunches.UsableBunch;
 
@@ -9,8 +10,8 @@ import java.util.List;
 public class Consigned extends Origin {
     private final List<ConsignedSale> sales = new ArrayList<>();
 
-    public Consigned(List<ReceivedBunch> receivedBunches, List<UsableBunch> bunches) {
-        super(receivedBunches, bunches);
+    public Consigned(List<ReceivedBunch> receivedBunches, List<ConsignedBunch> bunches) {
+        super(receivedBunches, bunches.stream().map(x -> (UsableBunch) x).toList());
     }
 
     public double applyCommission(double value) {

@@ -3,7 +3,7 @@ package com.example.jewie.frontend.views.catalog;
 import com.example.jewie.backend.Stock;
 import com.example.jewie.backend.pieces.Piece;
 import com.example.jewie.frontend.views.HomeViewController;
-import com.example.jewie.frontend.views.ViewControl;
+import com.example.jewie.frontend.views.ViewController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -16,7 +16,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class CatalogViewControl extends ViewControl implements Initializable {
+public class CatalogViewController extends ViewController implements Initializable {
     @FXML
     protected VBox cardsContainer;
 
@@ -28,7 +28,7 @@ public class CatalogViewControl extends ViewControl implements Initializable {
     private void addCards() {
         List<Piece> pieces = Stock.getInstance().getPieces();
         for (Piece piece : pieces) {
-            CatalogCardViewControl cardViewControl = new CatalogCardViewControl();
+            CatalogCardViewController cardViewControl = new CatalogCardViewController();
             cardViewControl.setData(piece.getName(),
                     piece.getCode(),
                     piece.getCatalogPrice(),

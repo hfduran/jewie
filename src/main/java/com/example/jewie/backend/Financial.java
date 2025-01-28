@@ -9,6 +9,12 @@ import java.util.List;
 import java.util.UUID;
 
 public class Financial {
+    private static Financial singletonInstance;
+    public static Financial getInstance() {
+        if (singletonInstance == null) singletonInstance = new Financial();
+        return singletonInstance;
+    }
+
     private final List<Sale> sales = new ArrayList<>();
     private final List<Purchase> purchases = new ArrayList<>();
     private final List<Consigned> consigneds = new ArrayList<>();

@@ -19,4 +19,8 @@ public abstract class Bunch {
     public int getQty() {
         return qty;
     }
+
+    public Piece getPiece() {
+        return this.piece;
+    }
 }

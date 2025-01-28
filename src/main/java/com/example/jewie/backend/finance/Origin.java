@@ -11,6 +11,9 @@ public abstract class Origin {
 
     public Origin(List<ReceivedBunch> receivedBunches, List<UsableBunch> bunches) {
         this.receivedBunches = receivedBunches;
+        for (ReceivedBunch receivedBunch : this.receivedBunches) {
+            receivedBunch.setOrigin(this);
+        }
         this.bunches = bunches;
     }
 }

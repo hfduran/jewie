@@ -1,10 +1,10 @@
 package com.example.jewie.frontend.views.catalog;
 
-import com.example.jewie.frontend.views.ViewControl;
+import com.example.jewie.frontend.views.ViewController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class CatalogCardViewControl extends ViewControl {
+public class CatalogCardViewController extends ViewController {
     @FXML
     protected Label nameLabel;
     @FXML

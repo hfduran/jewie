@@ -14,7 +14,7 @@ public abstract class SaleBuilder {
     private Date date;
     private Client client;
 
-    public void setMetadata(double value, Date date, Client client) {
+    public void setData(double value, Date date, Client client) {
         this.value = value;
         this.date = date;
         this.client = client;

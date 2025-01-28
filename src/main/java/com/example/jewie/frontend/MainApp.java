@@ -2,7 +2,6 @@ package com.example.jewie.frontend;
 
 import com.example.jewie.frontend.core.GlobalExceptionHandler;
 import com.example.jewie.frontend.views.HomeViewController;
-import com.example.jewie.frontend.views.ViewControl;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;

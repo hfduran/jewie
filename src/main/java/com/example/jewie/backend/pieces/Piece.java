@@ -42,4 +42,9 @@ public class Piece {
     public PieceType getType() {
         return type;
     }
+
+    @Override
+    public String toString() {
+        return this.getName() + " - " + this.getCode() + " - " + this.getType().name();
+    }
 }
