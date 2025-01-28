@@ -23,6 +23,10 @@ public class Piece {
         return this.bunchCollection.getBunches();
     }
 
+    public void addBunch(UsableBunch bunch) {
+        this.bunchCollection.addBunch(bunch);
+    }
+
     public int getQty() {
         return this.bunchCollection.getQuantitySum();
     }

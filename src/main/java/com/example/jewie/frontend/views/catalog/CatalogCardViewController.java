@@ -1,10 +1,13 @@
 package com.example.jewie.frontend.views.catalog;
 
+import com.example.jewie.backend.pieces.Piece;
 import com.example.jewie.frontend.views.ViewController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
 public class CatalogCardViewController extends ViewController {
+    @FXML
+    protected Label qtyLabel;
     @FXML
     protected Label nameLabel;
     @FXML
@@ -20,9 +23,10 @@ public class CatalogCardViewController extends ViewController {
     }
 
     public void setData(
-            String name, String code, Double price, String type
+            String name, Integer qty, String code, Double price, String type
     ) {
         nameLabel.setText(name);
+        qtyLabel.setText(qty.toString());
         codeLabel.setText(code);
         priceLabel.setText(price.toString());
         typeLabel.setText(type);

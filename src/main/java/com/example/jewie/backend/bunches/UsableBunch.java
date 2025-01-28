@@ -15,6 +15,7 @@ public abstract class UsableBunch extends ModifiableBunch {
     public UsableBunch(Piece piece, int qty) {
         super(piece, qty);
         this.suspendedBunch = new SuspendedBunch(this.piece);
+        this.piece.addBunch(this);
     }
 
     public int getSuspendedQty() {

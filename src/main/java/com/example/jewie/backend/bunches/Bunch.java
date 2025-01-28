@@ -14,6 +14,7 @@ public abstract class Bunch {
     public Bunch(Piece piece, int qty) {
         this.qty = qty;
         this.piece = piece;
+
     }
 
     public int getQty() {

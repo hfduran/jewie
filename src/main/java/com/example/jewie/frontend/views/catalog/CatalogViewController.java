@@ -30,6 +30,7 @@ public class CatalogViewController extends ViewController implements Initializab
         for (Piece piece : pieces) {
             CatalogCardViewController cardViewControl = new CatalogCardViewController();
             cardViewControl.setData(piece.getName(),
+                    piece.getQty(),
                     piece.getCode(),
                     piece.getCatalogPrice(),
                     piece.getType().toString());
